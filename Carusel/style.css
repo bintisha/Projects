@@ -1,0 +1,73 @@
+body {
+    background: #eee;
+    margin: 0;
+    padding: 0;
+    width: 600px;
+    margin: auto;
+}
+
+*:focus {
+    outline: none;
+}
+
+.carusel {
+    max-width: 600px;
+    height: 250px;
+    display: flex;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: 250px;
+    transition: opacity .4s;
+    opacity: .5;
+}
+
+button {
+    border: 0;
+    background: transparent;
+    position: absolute;
+    height: 100%;
+    transition: background .4s;
+}
+
+.prev{
+    left: 0;
+    transition:background 1s;
+}
+
+.prev:hover,.next:hover,.b1:hover,.b2:hover  {
+    background: white;
+}
+
+.next{
+    right: 0;
+    transition:background 1s;
+}
+
+
+.carusel2 {
+    overflow: hidden;
+    position: relative;
+}
+
+
+.wrap{
+    display: flex;
+    transform: translateX(-600px); 
+}
+
+.b1 {
+    top: 0;
+    left: 0;
+}
+
+.b2 {
+    top: 0;
+    right: 0;
+}
+
+h2 {
+    text-align: center;
+}
